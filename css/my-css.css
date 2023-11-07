@@ -1,0 +1,20 @@
+.oryx-icon-size {
+    width: 3em; /* Adjust the width to match your desired size */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align the image vertically */
+}
+
+.navbar .navbar-text#mis-total {
+    color: black;
+    font-size: 18px;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+.center-fit-img {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
