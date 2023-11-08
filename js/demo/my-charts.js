@@ -5,7 +5,9 @@ Chart.defaults.global.defaultFontColor = '#858796';
 
 document.addEventListener("DOMContentLoaded", function() {
     // Load CSV data and create the chart
-    Papa.parse('../../data/data.csv', {
+    var csvUrl = '../../data/data.csv?t=' + new Date().getTime();  
+
+    Papa.parse(csvUrl, {
         download: true,
         header: false,
         complete: function (results) {
@@ -37,7 +39,11 @@ document.addEventListener("DOMContentLoaded", function() {
                     id_ = "Pearl"
                 }
                 for (var i=0; i < data.length; i++) {
-                    sums[id_] += parseFloat(data[j][i]);
+                    var value = parseFloat(data[j][i]);  
+                    if (isNaN(value)) {  
+                        value = 0;  
+                    }  
+                    sums[id_] += value;  
                 }
             }
 
@@ -52,7 +58,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Create line chart
             var weeks = results.data[0]; // Assuming data is in the first (and only) row
-            console.log("weeks: ", weeks);
             var colors = ['#4e73df', '#1cc88a', '#e74a3b', '#f6c23e']; // Colors for the lines
             var labels = ['Falcon', 'Oryx', 'Dhow', 'Pearl'];
             var datasets = [];
