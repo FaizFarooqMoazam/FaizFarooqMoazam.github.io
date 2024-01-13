@@ -47,10 +47,10 @@ document.addEventListener("DOMContentLoaded", function() {
             //     <span class="recycling-entry">${kgPollutionSaved} kg - Pollution Avoided</span>
             // `;
             document.getElementById('trees-text').innerText = `${treesSaved} trees`;
-            document.getElementById('oil-barrels-text').innerText = `${barrelsOfOilSaved} barrels of Oil`;
-            document.getElementById('kW-energy-text').innerText = `${kWenergySaved} kW Energy`;
-            document.getElementById('cubic-m-landfill-text').innerText = `${cubicMLandfillSaved} Cubic m Landfill`;
-            document.getElementById('kg-pollution-text').innerText = `${kgPollutionSaved} kg Pollution`;
+            document.getElementById('oil-barrels-text').innerText = `${barrelsOfOilSaved} barrels of oil`;
+            document.getElementById('kW-energy-text').innerText = `${kWenergySaved} kW energy`;
+            document.getElementById('cubic-m-landfill-text').innerText = `${cubicMLandfillSaved} cubic m landfill`;
+            document.getElementById('kg-pollution-text').innerText = `${kgPollutionSaved} kg pollution`;
         }
     });
 });
