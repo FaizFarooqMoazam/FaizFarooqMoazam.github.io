@@ -24,10 +24,10 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
             var trees = sum * 0.018743;
-            var oilBarrels = sum * 0.117647;
-            var kWenergy = sum * 2050;
-            var cubicMLandfill = sum * 0.000597561;
-            var kgPollution = sum * 11.02041;
+            var oilBarrels = sum * 0.00221;
+            var kWenergy = sum * 4.5204;
+            var cubicMLandfill = sum * 0.0027012;
+            var kgPollution = sum * 0.02977;
 
             // Round to 2 decimal places
             var totalKg = sum.toFixed(2);  
