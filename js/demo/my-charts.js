@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 type: 'line',
                 data: {
                     labels: weeks.map(function(_, index) {
-                        return 'Week ' + (index + 1);
+                        return 'Weigh ' + (index + 1);
                     }),
                     datasets: datasets
                 },
